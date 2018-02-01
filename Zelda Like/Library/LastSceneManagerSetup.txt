@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Game/0_4_Meditation.unity
+  isLoaded: 1
+  isActive: 1
