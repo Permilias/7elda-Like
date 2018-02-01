@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Game/0_7_Village.unity
+  isLoaded: 1
+  isActive: 1
