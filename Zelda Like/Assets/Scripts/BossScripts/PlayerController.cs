@@ -161,6 +161,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			if (isStoringFire)
 			{
+				
 				SummonFireBall ();
 			}
 			else
@@ -247,6 +248,7 @@ public class PlayerController : MonoBehaviour {
 
 	private void SummonFireBall ()
 	{
+		isStoringFire = false;
 		Instantiate (fireBall, transform.position, cursor.transform.rotation* Quaternion.Euler (0, 0, 90));
 	}
 

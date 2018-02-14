@@ -17,10 +17,8 @@ public class MeditationManager : MonoBehaviour {
     public Animator playerAnimator;
     public Animator lanternAnim;
 
-    public Button lanternButton;
-
     public float playerSpeed;
-    public float lanternLightDelay;
+    public float gameStartingDelay;
 
     public RiddleManager riddleManager;
 
@@ -31,7 +29,7 @@ public class MeditationManager : MonoBehaviour {
     private bool sentenceFullyDisplayed;
 
     private bool isWalking;
-    public bool isLit;
+    public bool isLit = false;
 
 	void Start () {
 
@@ -86,24 +84,20 @@ public class MeditationManager : MonoBehaviour {
             StopWalking();
 
             //light lantern after lanternLightDelay
-            StartCoroutine("LightLantern");
+            StartCoroutine("StartGame");
 
             //sit down
             playerAnimator.SetTrigger("sitting");
             playerAnimator.SetBool("sat", true);
         }
 
-        //advance if walking
-        if(isWalking)
-        {
-            playerBody.velocity = new Vector3(0, playerSpeed, 0);
-        }
     }
 
 
     void StartWalking()
     {
         isWalking = true;
+        playerBody.velocity = new Vector3(0, playerSpeed, 0);
     }
 
 
@@ -114,12 +108,9 @@ public class MeditationManager : MonoBehaviour {
     }
 
 
-    private IEnumerator LightLantern()
+    private IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(lanternLightDelay);
-        lanternAnim.SetTrigger("light");
-        yield return new WaitForSeconds(2);
-        isLit = true;
+        yield return new WaitForSeconds(gameStartingDelay);
         riddleManager.state = RiddleState.active;
         dialogueBox.SetActive(true);
         lanternDialogue.TriggerDialogue();

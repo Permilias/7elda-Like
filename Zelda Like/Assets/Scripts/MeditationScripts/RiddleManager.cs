@@ -15,6 +15,8 @@ public class RiddleManager : MonoBehaviour {
 
     public ReactiveLight[] lightsArray;
 
+    public MeditationManager meditationManager;
+
     public bool canWin = true;
 
     public void Ignite(int _lightIndex)
@@ -73,7 +75,7 @@ public class RiddleManager : MonoBehaviour {
         Ignite(7);
         yield return new WaitForSeconds(0.3f);
         Ignite(8);
-        GameManager.soulsPossessed++;
-        Debug.Log("Souls Possessed : " + GameManager.soulsPossessed);
+        meditationManager.lanternAnim.SetTrigger("light");
+        meditationManager.isLit = true;
     }
 }

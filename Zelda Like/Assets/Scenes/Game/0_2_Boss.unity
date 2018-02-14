@@ -9248,17 +9248,17 @@ MonoBehaviour:
   invincible: 0
   bossHP: 8
   target: {fileID: 950845884}
-  attack1Rythm: 0.4
+  attack1Rythm: 0.5
   attack1Charge: 1.5
   attack1Zone: {fileID: 1117794627}
   attack1Pivot: {fileID: 2009620777}
   Trig1: {fileID: 1171869979}
   Trig2: {fileID: 1486778907}
-  attack2Rythm: 0.4
+  attack2Rythm: 0.5
   attack2Charge: 1.5
   attack2Zone: {fileID: 1379841651}
   attack2Pivot: {fileID: 2095847688}
-  attack3Rythm: 0.4
+  attack3Rythm: 0.5
   attack3Charge: 1.5
   attack3Zone: {fileID: 318753773}
   attack3Pivot: {fileID: 2072411651}
@@ -15446,7 +15446,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1409221015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a04724d1dc395794981537969ebe70e9, type: 3}
+  m_Script: {fileID: 11500000, guid: b0fb2f77c7ef0e74da8a1c9a23918499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1416384654
@@ -20706,7 +20706,7 @@ GameObject:
   - component: {fileID: 1966610235}
   m_Layer: 0
   m_Name: fireBall
-  m_TagString: Untagged
+  m_TagString: playerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

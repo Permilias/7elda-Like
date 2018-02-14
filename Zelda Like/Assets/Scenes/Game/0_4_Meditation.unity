@@ -1549,7 +1549,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.053564787}
@@ -1577,6 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meditationManager: {fileID: 1163518062}
+  sceneLoaded: 0_1_Run
 --- !u!114 &656322244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2221,6 +2222,7 @@ MonoBehaviour:
   - {fileID: 2044036230}
   - {fileID: 1965493202}
   - {fileID: 1938357667}
+  meditationManager: {fileID: 1163518062}
   canWin: 1
 --- !u!1 &1095508564
 GameObject:
@@ -2718,11 +2720,11 @@ MonoBehaviour:
   lanternAnim: {fileID: 656322239}
   lanternButton: {fileID: 0}
   playerSpeed: 1.5
-  lanternLightDelay: 1.5
+  gameStartingDelay: 1
   riddleManager: {fileID: 1093344966}
   lanternDialogue: {fileID: 656322244}
   dialogueManager: {fileID: 1127581496}
-  dialogueBox: {fileID: 0}
+  dialogueBox: {fileID: 2084419631}
   isLit: 0
 --- !u!4 &1163518063
 Transform:
