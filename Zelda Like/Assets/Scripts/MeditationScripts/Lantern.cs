@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class Lantern : MonoBehaviour {
 
     public MeditationManager meditationManager;
+    public string loadedScene;
 
     private void OnMouseUpAsButton()
     {
         if(meditationManager.isLit)
         {
-            SceneManager.LoadScene("0_7_Village");
+            SceneManager.LoadScene(loadedScene);
         }
     }
 }

@@ -138,11 +138,11 @@ Transform:
   m_LocalPosition: {x: -0.3466972, y: -0.054274507, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1127581495}
   - {fileID: 1163518063}
   - {fileID: 1607939985}
   - {fileID: 996251344}
   - {fileID: 779957925}
-  - {fileID: 1127581495}
   - {fileID: 1093344965}
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -1549,7 +1549,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.053564787}
@@ -1577,6 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meditationManager: {fileID: 1163518062}
+  loadedScene: 0_1_Run
 --- !u!114 &656322244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,7 +1722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 29542542}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832815735
 GameObject:
@@ -1879,7 +1880,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 29542542}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1013336538
 GameObject:
@@ -2221,6 +2222,7 @@ MonoBehaviour:
   - {fileID: 2044036230}
   - {fileID: 1965493202}
   - {fileID: 1938357667}
+  meditationManager: {fileID: 1163518062}
   canWin: 1
 --- !u!1 &1095508564
 GameObject:
@@ -2488,7 +2490,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 29542542}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1127581496
 MonoBehaviour:
@@ -2716,13 +2718,12 @@ MonoBehaviour:
   stoppingTransform: {fileID: 779957925}
   playerAnimator: {fileID: 408484407}
   lanternAnim: {fileID: 656322239}
-  lanternButton: {fileID: 0}
   playerSpeed: 1.5
   lanternLightDelay: 1.5
   riddleManager: {fileID: 1093344966}
   lanternDialogue: {fileID: 656322244}
   dialogueManager: {fileID: 1127581496}
-  dialogueBox: {fileID: 0}
+  dialogueBox: {fileID: 2084419631}
   isLit: 0
 --- !u!4 &1163518063
 Transform:
@@ -2735,7 +2736,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 29542542}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1203259628
 GameObject:
@@ -3288,7 +3289,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 29542542}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1636562779
 GameObject:

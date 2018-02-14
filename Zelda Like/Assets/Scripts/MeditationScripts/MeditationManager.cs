@@ -17,8 +17,6 @@ public class MeditationManager : MonoBehaviour {
     public Animator playerAnimator;
     public Animator lanternAnim;
 
-    public Button lanternButton;
-
     public float playerSpeed;
     public float lanternLightDelay;
 
@@ -117,9 +115,6 @@ public class MeditationManager : MonoBehaviour {
     private IEnumerator LightLantern()
     {
         yield return new WaitForSeconds(lanternLightDelay);
-        lanternAnim.SetTrigger("light");
-        yield return new WaitForSeconds(2);
-        isLit = true;
         riddleManager.state = RiddleState.active;
         dialogueBox.SetActive(true);
         lanternDialogue.TriggerDialogue();
