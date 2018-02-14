@@ -306,6 +306,7 @@ public class LaPelleScript : MonoBehaviour {
 
 		if (other.tag == "playerAttack" && target.GetComponent<PlayerController>().isAttacking && !target.GetComponent<PlayerController>().hasAtk)
 		{
+			print ("prout");
 			BossTakeDamage();
 		}
 	}

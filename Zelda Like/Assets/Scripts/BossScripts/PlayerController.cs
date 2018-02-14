@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour {
 	public float clickCollider;
 	public Vector2 aimPosition;
 	public GameObject playerAttackZone;
+	public GameObject playerAoeZone;
 	public GameObject pivotPlayerAttackZone;
 
 	private GameObject debugClickedNode;
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 	private bool startColorizing = true;
 	private bool hasChargedDash = false; //Vrai si le joueur a chargé son dash.
 	private bool onceOnly;
-
+	private float attackCharge;
 
 	//La Boule de Feu
 	public bool isStoringFire;
@@ -115,6 +116,7 @@ public class PlayerController : MonoBehaviour {
 		aimPosition = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y)); //doublon
 
 		pivotPlayerAttackZone.transform.position = transform.position;
+		playerAoeZone.transform.position = transform.position;
 
 		//Compte le temps du dash chargé
 		if (Input.GetKey(dash) )
@@ -157,18 +159,32 @@ public class PlayerController : MonoBehaviour {
 		//La frappe
 			timerAttack += Time.deltaTime;
 
-		if (Input.GetKeyDown(attack) && !isAttacking)
+
+		//Boule De Feu Input
+		if (Input.GetKeyDown(attack) && !isAttacking && isStoringFire)
 		{
-			if (isStoringFire)
-			{
-				
 				SummonFireBall ();
-			}
-			else
+		}
+
+		if (Input.GetKey(attack) && !isAttacking && !isStoringFire)
+		{
+			attackCharge += Time.deltaTime;
+
+		}
+
+
+		if (Input.GetKeyUp(attack) && !isAttacking && !isStoringFire)
+		{
+			if (attackCharge <= 0.5) 
 			{
 				Attack ();
-
 			}
+			if (attackCharge >= 0.5) 
+			{
+				AttackAOE ();
+			}
+			attackCharge = 0;
+
 
 		}
 
@@ -179,6 +195,8 @@ public class PlayerController : MonoBehaviour {
 			isAttacking = false;
 			playerAttackZone.GetComponent<SpriteRenderer>().color += new Color (0, 0, 0, -0.5f);
 			playerAttackZone.GetComponent<BoxCollider2D> ().enabled = false;
+			playerAoeZone.GetComponent<SpriteRenderer>().color += new Color (0, 0, 0, -0.5f);
+			playerAoeZone.GetComponent<BoxCollider2D> ().enabled = false;
 		}
 
 
@@ -242,6 +260,15 @@ public class PlayerController : MonoBehaviour {
 		playerAttackZone.transform.Rotate (Vector3.right * -0.1f);
 		playerAttackZone.GetComponent<SpriteRenderer>().color += new Color (0, 0, 0, 0.5f);
 		pivotPlayerAttackZone.transform.rotation = cursor.transform.rotation;
+		playerAttackZone.GetComponent<BoxCollider2D> ().enabled = true;
+		timerAttack = 0;
+	}
+
+	private void AttackAOE()
+	{
+		hasAtk = false;
+		isAttacking = true;
+		playerAoeZone.GetComponent<SpriteRenderer>().color += new Color (0, 0, 0, 0.5f);
 		playerAttackZone.GetComponent<BoxCollider2D> ().enabled = true;
 		timerAttack = 0;
 	}
