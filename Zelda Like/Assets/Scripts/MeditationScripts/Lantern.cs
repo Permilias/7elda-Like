@@ -10,7 +10,6 @@ public class Lantern : MonoBehaviour {
 
     private void OnMouseUpAsButton()
     {
-        print("prout");
         if (meditationManager.isLit)
         {
 
