@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Lantern : MonoBehaviour {
 
     public MeditationManager meditationManager;
+<<<<<<< HEAD
     public string sceneLoaded;
 =======
     public string loadedScene;
