@@ -110,7 +110,11 @@ public class MeditationManager : MonoBehaviour {
 
     private IEnumerator StartGame()
     {
+<<<<<<< HEAD
         yield return new WaitForSeconds(gameStartingDelay);
+=======
+        yield return new WaitForSeconds(lanternLightDelay);
+>>>>>>> Martin
         riddleManager.state = RiddleState.active;
         dialogueBox.SetActive(true);
         lanternDialogue.TriggerDialogue();

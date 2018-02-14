@@ -75,7 +75,12 @@ public class RiddleManager : MonoBehaviour {
         Ignite(7);
         yield return new WaitForSeconds(0.3f);
         Ignite(8);
+<<<<<<< HEAD
         meditationManager.lanternAnim.SetTrigger("light");
         meditationManager.isLit = true;
+=======
+        meditationManager.isLit = true;
+        meditationManager.lanternAnim.SetTrigger("light");
+>>>>>>> Martin
     }
 }

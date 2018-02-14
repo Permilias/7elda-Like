@@ -38,10 +38,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 244
     y: 0
+<<<<<<< HEAD
     width: 1088
     height: 627
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
+=======
+    width: 1128
+    height: 626
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> Martin
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -70,7 +77,11 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 221}
   m_MaxSize: {x: 8008, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 92
+=======
+  controlID: 93
+>>>>>>> Martin
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,7 +130,11 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 471}
   m_MaxSize: {x: 10002, y: 14021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 126
+=======
+  controlID: 140
+>>>>>>> Martin
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +248,11 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 471}
   m_MaxSize: {x: 22012, y: 14021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 149
+=======
+  controlID: 91
+>>>>>>> Martin
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -257,7 +276,11 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 342}
   m_MaxSize: {x: 8008, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 150
+=======
+  controlID: 92
+>>>>>>> Martin
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -303,8 +326,13 @@ MonoBehaviour:
     y: 627
     width: 1332
     height: 305
+<<<<<<< HEAD
   m_MinSize: {x: 104, y: 121}
   m_MaxSize: {x: 4004, y: 4021}
+=======
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> Martin
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -547,9 +575,15 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: a4830000
     m_LastClickedID: 33700
     m_ExpandedIDs: 06aaffff18aaffff02afffffaac6ffffbcc6ffff26d1ffff4adaffff72dcffffc2deffff68f4ffff9efbffff00000000d87c0000a2820000
+=======
+    m_SelectedIDs: 4c340000
+    m_LastClickedID: 13388
+    m_ExpandedIDs: e4eeffff08efffff00000000ca330000
+>>>>>>> Martin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +629,11 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 242
+<<<<<<< HEAD
     y: 727
+=======
+    y: 726
+>>>>>>> Martin
     width: 1328
     height: 284
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -662,11 +700,19 @@ MonoBehaviour:
     - e00: 1
       e01: 0
       e02: 0
+<<<<<<< HEAD
       e03: -81
       e10: 0
       e11: 1
       e12: 0
       e13: 76
+=======
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+>>>>>>> Martin
       e20: 0
       e21: 0
       e22: 1
@@ -738,7 +784,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 2c260000
     m_LastClickedID: 9772
+<<<<<<< HEAD
     m_ExpandedIDs: 000000008e28000098280000ac280000d2280000e0280000e428000000290000142900003429000090290000d8290000e6290000522a00005a2a00009a2a0000be2a0000ce2a00007e2b00009e2b0000985100009a5100009c5100009e510000a0510000a2510000a4510000a6510000a8510000
+=======
+    m_ExpandedIDs: 000000009c2d00008630000022320000263200002a3200003032000040320000463200004a3200005a32000066320000783200009c320000c4320000cc320000fc320000223300002a330000303300003c33000064330000663300007c330000843300009233000096330000a8330000a2350000a4350000a6350000a8350000aa350000ac350000ae350000b0350000b2350000
+>>>>>>> Martin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -766,7 +816,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 300}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000008e28000098280000ac280000d2280000e0280000e428000000290000142900003429000090290000d8290000e6290000522a00005a2a00009a2a0000a82a0000be2a0000ce2a00007e2b00009e2b0000985100009a5100009c5100009e510000a0510000a2510000a4510000a6510000a8510000
+=======
+    m_ExpandedIDs: 000000009c2d00008630000022320000263200002a3200003032000040320000463200004a3200005a32000066320000783200009c320000c4320000cc320000fc320000223300002a330000303300003c33000064330000663300007c330000843300009233000096330000a8330000a2350000a4350000a6350000a8350000aa350000ac350000ae350000b0350000b2350000
+>>>>>>> Martin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 0_4_Meditation
