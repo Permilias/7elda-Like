@@ -2718,7 +2718,6 @@ MonoBehaviour:
   stoppingTransform: {fileID: 779957925}
   playerAnimator: {fileID: 408484407}
   lanternAnim: {fileID: 656322239}
-  lanternButton: {fileID: 0}
   playerSpeed: 1.5
   gameStartingDelay: 1
   riddleManager: {fileID: 1093344966}
