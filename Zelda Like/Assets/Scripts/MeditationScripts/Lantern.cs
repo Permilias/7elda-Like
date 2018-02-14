@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Lantern : MonoBehaviour {
 
     public MeditationManager meditationManager;
-<<<<<<< HEAD
     public string sceneLoaded;
 
     private void OnMouseUpAsButton()
